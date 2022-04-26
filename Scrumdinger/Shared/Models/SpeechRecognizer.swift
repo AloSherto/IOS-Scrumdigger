@@ -18,6 +18,7 @@ class SpeechRecognizer: ObservableObject {
         case recognizerIsUnavailable
         
         var message: String {
+            
             switch self {
             case .nilRecognizer: return "Can't initialize spech recognizer"
             case .notAuthorizedToRecognize: return "Not authorized to recognize speech"
